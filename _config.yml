@@ -6,34 +6,34 @@ favicon: images/favicon.ico
 version: 2
 
 # Personal info
-name: Brett Harris
-title: Senior Network System Administrator
-email: brett.h@email.co.uk
-website: www.github.com/sproogen/resume-theme
+name: 유현지
+title: Backend Developer
+email: yoo77hyeon@gmail.com
+website: https://hamcheeseburger.tistory.com/
 
 # Dark Mode (true/false/never)
-darkmode: false
+darkmode: never
 
 # Social links
-twitter_username: facespics
-github_username:  sproogen
+#twitter_username: facespics
+github_username:  hamcheeseburger
 # stackoverflow_username: "00000001"
 # dribbble_username: jekyll
 # facebook_username: jekyll
 # flickr_username: jekyll
-instagram_username: jameswgrant
-linkedin_username: jameswgrant
+#instagram_username: jameswgrant
+linkedin_username: 현지-유-77558b258
 # xing_username: jekyll
 # pinterest_username: jekyll
-youtube_username: globalmtb
+#youtube_username: globalmtb
 # googleplus_username: +jekyll
 # orcid_username: 0000-0000-0000-0000
 
 # Additional icon links
 additional_links:
-- title: itsgoingto.be
+- title: blog
   icon: fas fa-globe
-  url: https://www.itsgoingto.be
+  url: https://hamcheeseburger.tistory.com/
 # - title: another link
 #   icon: font awesome brand icon name (eg. fab fa-twitter) (https://fontawesome.com/icons?d=gallery&m=free)
 #   url: Link url (eg. https://google.com)
@@ -46,71 +46,110 @@ additional_links:
 
 # About Section
 # about_title: About Me
-about_profile_image: images/profile.jpg
+#about_profile_image: images/profile.jpg
 about_content: | # this will include new lines to allow paragraphs
-  Hi, my name's Brett and I'm a senior network system administrator. As well as administrating systems I also have experience making software and web apps. I have worked at a number of companies gaining teamwork and leadership skills.
-
-  I am most skilled in: <mark>AWS</mark> and <mark>Eating Pizza</mark>
+  3년차 백엔드 개발자로 일하고 있으며, 
+  문제해결을 위해 기술적으로 깊게 파고드는 부분은 물론이고, 근본적인 원인 해결을 위해 컨텍스트를 파악하는 개발자가 되기 위해 노력하고 있습니다.
+#  I am most skilled in: <mark>AWS</mark> and <mark>Eating Pizza</mark>
 
 content:
-  - title: Projects # Title for the section
-    layout: list # Type of content section (list/text)
-    content:
-      - layout: top-middle
-        title: Super awesome project
-        link: github.com/sproogen
-        # link_text: Project Website
-        additional_links:
-          - title:  sproogen/modern-resume-theme
-            icon: fab fa-github
-            url: github.com/sproogen/modern-resume-theme
-          # - title:  Github page for project (eg. sproogen/modern-resume-theme)
-          #   icon: fab fa-github
-          #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)
-        quote: >
-          This is probably one of the greatest apps ever created, if you don't agree you're probably wrong.
-        description: | # this will include new lines to allow paragraphs
-          I started this project as a way if learning <mark>React</mark> and it has since grown into a fully fledged app. I have learned many skills through this and been I'm very proud of having this in my portfolio. If you don't have a project as awesome as this I would advise you make one.
-
   - title: Experience # Title for the section
     layout: list # Type of content section (list/text)
     content:
       - layout: left
-        title: The Boring Company
-        link: boringcompany.com
+        title: 우아한형제들
+        link: https://www.woowahan.com/
         # link_text: boringcompany.com
-        sub_title: Senior Network System Administrator
-        caption: November 2017 - Present
+        sub_title: 내/외부 중계 서버 개발
+        caption: 2023 1월 - 현재
         quote: >
-          Solving 21st century problems by diging holes and making game changing products like the *not a flamethrower*
+          MAU 1500만, 일 ~의 트래픽
         description: | # this will include new lines to allow paragraphs
-            Every company needs its networks properly administered and The Boring Compay is no exception. Digging holes is hard and I play my part making sure the whole company stays connected. I lead a team of 5 people and enjoy driving the company to try new technologies.
+          - 다양한 주문스펙을 하나의 통일된 스펙으로 중계할 수 있는 내부 서비스 개발
+          - 외부 배달대행사/포스사와 연동하는 서비스 개발
+          - 대량 트래픽에서의 API/Worker/Batch 서버 개발
+
+  - title: Projects # Title for the section
+    layout: list # Type of content section (list/text)
+    content:
+      - layout: top-middle
+        title: 주문중계 플랫폼 서비스 개발
+#        link: github.com/sproogen
+        # link_text: Project Website
+#        additional_links:
+#          - title: sproogen/modern-resume-theme
+#            icon: fab fa-github
+#            url: github.com/sproogen/modern-resume-theme
+          # - title:  Github page for project (eg. sproogen/modern-resume-theme)
+          #   icon: fab fa-github
+          #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)
+        quote: >
+          다양한 주문스펙을 하나로 통합하여 중계할 수 있는 플랫폼 서비스 초기 개발 및 유지보수
+        description: | # this will include new lines to allow paragraphs
+          **기술 스택**
+          - Java, Springboot, Kafka, MySql, Ngrinder
+          
+          **주요 작업**
+          - sdk를 제공하여 소비처에서 원하는 페이로드 형태로 수신할 수 있도록 함
+          - 기존 flow의 처리 속도 비교와 페이로드 스펙을 검증할 수 있는 서버 개발
+#          - (TBD) 퍼포먼스 및 비용절감 측면에서 작성 필요
+      - layout: top-middle
+        title: 배민주문접수PC Lite 서버 개발
+        quote: >
+          업주가 POS 디바이스에서 배민주문을 접수할 수 있는 프로그램 서버 개발
+        description: | # this will include new lines to allow paragraphs
+          **기술 스택**
+          - Kotlin, Java, WebFlux, Springboot, MySql, Redis, Ngrinder
+          
+          **주요 작업** 
+          - MAU 3800 트래픽을 받아내는 시스템 초기 구축 및 개발
+          - Webflux 기반 BFF 서버 개발 및 여러 백엔드 API 병렬 호출을 통한 네트워크 효율성 향상
+          - Ngrinder를 통한 성능측정 및 최적화
+          
+#          ** 성과 **
+#          - 포스사와의 공식연동으로 비공식적 후킹사례 15% 감소
+
+      - layout: top-middle
+        title: 시스템 안정성 향상을 위한 개발
+        description: | # this will include new lines to allow paragraphs
+          - 이벤트 처리기 장애 시, 주문팀과의 상태 동기화를 위한 batch 서버 개발
+          - 비인가 외부업체 후킹 방지를 위한 API 보안 개발 
+          - 외부중계 주문이벤트 재발행 시스템 구성
+      - layout: top-middle
+        title: 생산성 향상을 위한 개발
+        #        quote: >
+        #          업주가 POS 디바이스에서 배민주문을 접수할 수 있는 프로그램 서버 개발
+        description: | # this will include new lines to allow paragraphs
+          - 모니터링 대시보드 구축 및 관리시스템 통합
+          - 불필요한 인프라 리소스 제거로 인한 비용절감
 
   - title: Education # Title for the section
     layout: list # Type of content section (list/text)
     content:
       - layout: left
-        title: Harvard University
-        caption: 2010 - 2013
-        sub_title: BSc Computer Science
-        quote: >
-          Established in 1636, Harvard is the oldest higher education institution in the United States, and is widely regarded in terms of its influence, reputation, and academic pedigree as a leading university in not just the US but also the world.
+        title: 우아한테크코스
+        caption: 2022.02 - 2022.11
+        sub_title: 백엔드 개발 교육 코스
+#        quote: >
+
         description: | # this will include new lines to allow paragraphs
-          During my time at Harvard I learnt most of my key skills that have I have taken through my career such as teamwork and working to tight deadlines. I thouroughly enjoyed my time as university and learnt a lot about a healthy work life balance.
+          - Java와 객체지향설계에 대한 학습
+          - TDD를 통해 구현하는 방법 학습
+          - Spring boot와 JPA에 대한 학습
+          - 팀프로젝트를 통한 협업 경험
+          - 글쓰기 연습을 통한 소프트스킬 향상
 
-          I spent a lot of my free time as a committee member of the *Harvard Mountaineering Club* taking on roles such as *Trip Secretary* and *Vice-President*.
-
-  - title: A Little More About Me
-    layout: text
-    content: | # this will include new lines to allow paragraphs
-      Alongside my interests in networks and software engineering some of my other interests and hobbies are:
-      - Rock climbing
-      - Gaming
-      - Knitting
-      - [Becoming a ninja](https://www.youtube.com/watch?v=vtg4o__aRMg)
-
-      Look at this cool image  
-      ![Trees](/modern-resume-theme/images/landscape-trees.jpg "Trees")
+#  - title: A Little More About Me
+#    layout: text
+#    content: | # this will include new lines to allow paragraphs
+#      Alongside my interests in networks and software engineering some of my other interests and hobbies are:
+#      - Rock climbing
+#      - Gaming
+#      - Knitting
+#      - [Becoming a ninja](https://www.youtube.com/watch?v=vtg4o__aRMg)
+#
+#      Look at this cool image
+#      ![Trees](/modern-resume-theme/images/landscape-trees.jpg "Trees")
 
 # Footer
 footer_show_references: true
